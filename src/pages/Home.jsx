@@ -51,7 +51,7 @@ export default function Home() {
           >
             <p className="font-mono text-sm text-muted-foreground leading-relaxed">
               Stahl Computer Haus ist Ihr kompetenter IT-Dienstleister. 
-              Telekomunikation, Security, Infrastruktur und Support — 
+              Telekommunikation, Security, Infrastruktur und Support — 
               alles aus einer Hand. 
             </p>
           </motion.div>
