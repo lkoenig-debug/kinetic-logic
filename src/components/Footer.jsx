@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="font-heading font-bold text-lg text-foreground mb-3">
-              NEXUS<span className="text-primary">.</span>LOGIC
+              STAH<span className="text-primary">.</span>COMPUTER
             </h3>
             <p className="font-mono text-xs text-muted-foreground leading-relaxed max-w-xs">
               Wir architekturieren die unsichtbare Infrastruktur, die Ihr Unternehmen antreibt.
@@ -36,7 +36,7 @@ export default function Footer() {
           <div>
             <h4 className="font-heading font-semibold text-sm text-foreground mb-3 uppercase tracking-wider">Kontakt</h4>
             <div className="flex flex-col gap-2 font-mono text-xs text-muted-foreground">
-              <span>info@nexuslogic.de</span>
+              <span>info@stahcomputer.de</span>
               <span>+49 30 123 456 789</span>
               <span>Berlin, Deutschland</span>
             </div>
@@ -44,7 +44,7 @@ export default function Footer() {
         </div>
         <div className="mt-12 pt-6 border-t border-border/20 flex flex-col md:flex-row justify-between items-center gap-4">
           <span className="font-mono text-xs text-muted-foreground">
-            © {new Date().getFullYear()} NEXUS.LOGIC — Alle Rechte vorbehalten.
+            © {new Date().getFullYear()} STAH.COMPUTER — Alle Rechte vorbehalten.
           </span>
           <div className="flex gap-4">
             <span className="font-mono text-xs text-muted-foreground hover:text-primary cursor-pointer transition-colors">Impressum</span>
