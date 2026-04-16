@@ -23,8 +23,8 @@ export default function ParticleBackground() {
     container.appendChild(renderer.domElement);
 
     // Create particle grid
-    const GRID = 40;
-    const SPACING = 3;
+    const GRID = 30;
+    const SPACING = 4;
     const count = GRID * GRID;
     const geometry = new THREE.BufferGeometry();
     const positions = new Float32Array(count * 3);
@@ -32,8 +32,8 @@ export default function ParticleBackground() {
     const colors = new Float32Array(count * 3);
     const sizes = new Float32Array(count);
 
-    const baseColor = new THREE.Color(0.35, 0.35, 0.4);
-    const accentColor = new THREE.Color(0.741, 1.0, 0.0); // #BDFF00
+    const baseColor = new THREE.Color(0.18, 0.18, 0.22);
+    const accentColor = new THREE.Color(0.45, 0.65, 0.0);
 
     for (let i = 0; i < GRID; i++) {
       for (let j = 0; j < GRID; j++) {
@@ -50,7 +50,7 @@ export default function ParticleBackground() {
         colors[idx * 3] = baseColor.r;
         colors[idx * 3 + 1] = baseColor.g;
         colors[idx * 3 + 2] = baseColor.b;
-        sizes[idx] = 1.5;
+        sizes[idx] = 1.0;
       }
     }
 
@@ -74,7 +74,7 @@ export default function ParticleBackground() {
             positions[i * 3], positions[i * 3 + 1], positions[i * 3 + 2],
             positions[j * 3], positions[j * 3 + 1], positions[j * 3 + 2]
           );
-          lineColors.push(0.15, 0.15, 0.18, 0.15, 0.15, 0.18);
+          lineColors.push(0.08, 0.08, 0.1, 0.08, 0.08, 0.1);
         }
       }
     }
@@ -85,17 +85,17 @@ export default function ParticleBackground() {
     const lineMaterial = new THREE.LineBasicMaterial({
       vertexColors: true,
       transparent: true,
-      opacity: 0.3,
+      opacity: 0.15,
       blending: THREE.AdditiveBlending,
     });
     const lines = new THREE.LineSegments(lineGeometry, lineMaterial);
     scene.add(lines);
 
     const pointMaterial = new THREE.PointsMaterial({
-      size: 1.5,
+      size: 1.0,
       vertexColors: true,
       transparent: true,
-      opacity: 0.8,
+      opacity: 0.45,
       blending: THREE.AdditiveBlending,
       sizeAttenuation: true,
     });
