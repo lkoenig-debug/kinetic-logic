@@ -55,7 +55,7 @@ export default function Contact() {
             {/* Terminal header */}
             <div className="flex items-center gap-2 px-4 py-3 border-b border-border/20 bg-card/50">
               <Terminal size={14} className="text-primary" />
-              <span className="font-mono text-xs text-muted-foreground">stah.computer — contact_protocol v2.1</span>
+              <span className="font-mono text-xs text-muted-foreground">nexus.logic — contact_protocol v2.1</span>
               <div className="ml-auto flex gap-1.5">
                 <div className="w-2.5 h-2.5 rounded-full bg-border/50" />
                 <div className="w-2.5 h-2.5 rounded-full bg-border/50" />
@@ -151,7 +151,7 @@ export default function Contact() {
       <section className="px-6 lg:px-8 py-24">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
-            { label: 'Email', value: 'info@stahcomputer.de' },
+            { label: 'Email', value: 'info@nexuslogic.de' },
             { label: 'Telefon', value: '+49 30 123 456 789' },
             { label: 'Standort', value: 'Berlin, Deutschland' },
           ].map((item, i) => (
