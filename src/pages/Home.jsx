@@ -10,7 +10,7 @@ const STATS = [
   { value: '100+', label: 'Kunden' },
   { value: '99%', label: 'Uptime' },
   { value: '20+', label: 'Jahre Erfahrung' },
-  { value: '3', label: 'IT-Fachkräfte' },
+  { value: '  3', label: 'IT-Fachkräfte' },
 ];
 
 export default function Home() {
