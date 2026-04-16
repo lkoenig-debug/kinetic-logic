@@ -16,7 +16,7 @@ export default function CaseCard({ title, category, metric, image, large, index 
         <img
           src={image}
           alt={title}
-          className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-40 group-hover:scale-105 transition-all duration-700"
+          className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-70 group-hover:scale-105 transition-all duration-700"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
         <div className="relative z-10 p-6 md:p-8 flex flex-col justify-end h-full">
