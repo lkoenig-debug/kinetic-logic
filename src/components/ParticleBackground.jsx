@@ -142,8 +142,8 @@ export default function ParticleBackground() {
       const linePosAttr = lineGeometry.attributes.position;
 
       const INFLUENCE_RADIUS = 18;
-      const PULL_STRENGTH = 0.06;
-      const RETURN_SPEED = 0.03;
+      const PULL_STRENGTH = 0.02;
+      const RETURN_SPEED = 0.01;
 
       for (let i = 0; i < count; i++) {
         const ox = originalPositions[i * 3];
