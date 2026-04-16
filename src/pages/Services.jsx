@@ -14,7 +14,7 @@ const SERVICES = [
       'Planung und Installation von Cloud-Telefonanlagen (VoIP / hosted PBX)',
       'Migration bestehender analoger oder ISDN-Anlagen in die Cloud',
       'Einrichtung von Softphones, Headsets und mobilen Nebenstellen',
-      'Anbindung an Microsoft Teams Phone, 3CX und vergleichbare Plattformen',
+      'Anbindung an Microsoft Teams Phone, Starface und vergleichbare Plattformen',
       'Konferenzlösungen und automatische Anrufverteilung (ACD)',
       'Laufende Betreuung, Wartung und Erweiterung der Telefonanlage',
     ],
@@ -41,7 +41,7 @@ const SERVICES = [
     details: [
       'Konzeption und Einrichtung automatischer Backup-Lösungen (lokal & Cloud)',
       'Regelmäßige Überprüfung und Testwiederherstellung gesicherter Daten',
-      'Netzwerkgebundene Speicherlösungen (NAS) für zentrale Datenhaltung',
+      'Netzwerkgebundene Speicherlösungen für zentrale Datenhaltung',
       'DSGVO-konforme Datensicherung und Archivierung',
       'Disaster Recovery: schnelle Wiederherstellung im Ernstfall',
       'Monitoring des Speicherplatzes und frühzeitige Warnmeldungen',
@@ -54,8 +54,8 @@ const SERVICES = [
     description: 'Professionelle Installation von Hardware und strukturierter Verkabelung — sauber, dokumentiert und für die Zukunft ausgelegt.',
     details: [
       'Aufbau und Inbetriebnahme von PCs, Servern, Switches und Routern',
-      'Strukturierte Netzwerkverkabelung (Cat 6/7, Patchpanel, Rangierverteiler)',
-      'WLAN-Planung und Installation für Büros, Hallen und Mehrgeschosser',
+      'Strukturierte Netzwerkverkabelungs Beratung',
+      'WLAN-Planung, Ausleuchtung und Installation in Gewerbe Einheiten so wie WLAN Brücken',
       'Rack-Aufbau und ordentliches Kabelmanagement',
       'Drucker, Scanner und Peripheriegeräte einrichten und einbinden',
       'Dokumentation aller installierten Komponenten und Netzwerkpläne',
