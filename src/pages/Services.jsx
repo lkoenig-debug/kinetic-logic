@@ -69,7 +69,7 @@ const SERVICES = [
     details: [
       'Vor-Ort-Support bei Ihnen im Büro oder Betrieb (on-premise)',
       'Remote-Support per Fernwartung für schnelle Problemlösung ohne Anfahrt',
-      'Telefonischer Support für unmittelbare Hilfe im Alltag',
+      'Telefonischer Support für Individuelle Lösungen',
       'First- und Second-Level-Support für Ihre Mitarbeiter',
       'Reaktionszeiten nach vereinbartem Service Level Agreement (SLA)',
       'Proaktive Wartung und regelmäßige System-Checks zur Fehlerprävention',
