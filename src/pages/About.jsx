@@ -46,7 +46,7 @@ export default function About() {
             viewport={{ once: true }}
             className="font-heading font-semibold text-2xl md:text-4xl lg:text-5xl text-foreground tracking-tight leading-tight max-w-4xl"
           >
-            Wir sind ein Kollektiv aus <span className="text-primary">50+ Ingenieuren</span>, 
+            Wir sind ein Kollektiv aus <span className="text-primary">3 IT Fachkräften </span>, 
             die glauben, dass digitale Infrastruktur mehr sein kann als nur{' '}
             <span className="text-primary">funktional</span> — sie kann{' '}
             <span className="text-primary">außergewöhnlich</span> sein.
