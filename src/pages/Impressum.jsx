@@ -27,9 +27,10 @@ export default function Impressum() {
             <div>
               <h2 className="font-heading font-semibold text-lg text-foreground mb-3">Angaben gemäß § 5 TMG</h2>
               <p>
-                Stahl Computer Haus GmbH<br />
-                Musterstraße 1<br />
-                10115 Berlin<br />
+                 
+                Stahlcomputer<br />
+                Kriegsstraße 132<br />
+                76133 Karlsruhe<br />
                 Deutschland
               </p>
             </div>
@@ -37,14 +38,15 @@ export default function Impressum() {
             <div>
               <h2 className="font-heading font-semibold text-lg text-foreground mb-3">Vertreten durch</h2>
               <p>
-                Geschäftsführer: [Vor- und Nachname eintragen]
+                Geschäftsführer: [Boris Stahl]<br />
+                Kriegsstraße 132
               </p>
             </div>
 
             <div>
               <h2 className="font-heading font-semibold text-lg text-foreground mb-3">Kontakt</h2>
               <p>
-                Telefon: +49 30 123 456 789<br />
+                Telefon: +49 721 - 234 65<br />
                 E-Mail: info@stahlcomputer.de
               </p>
             </div>
@@ -58,22 +60,6 @@ export default function Impressum() {
               </p>
             </div>
 
-            <div>
-              <h2 className="font-heading font-semibold text-lg text-foreground mb-3">Umsatzsteuer-ID</h2>
-              <p>
-                Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz:<br />
-                DE [Nummer eintragen]
-              </p>
-            </div>
-
-            <div>
-              <h2 className="font-heading font-semibold text-lg text-foreground mb-3">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
-              <p>
-                [Vor- und Nachname eintragen]<br />
-                Musterstraße 1<br />
-                10115 Berlin
-              </p>
-            </div>
 
             <div>
               <h2 className="font-heading font-semibold text-lg text-foreground mb-3">Streitschlichtung</h2>
