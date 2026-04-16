@@ -17,6 +17,7 @@ const SERVICES = [
       'Anbindung an Microsoft Teams Phone, Starface und vergleichbare Plattformen',
       'Konferenzlösungen und automatische Anrufverteilung (ACD)',
       'Laufende Betreuung, Wartung und Erweiterung der Telefonanlage',
+      'u.v.m.',
     ],
   },
   {
@@ -31,6 +32,7 @@ const SERVICES = [
       'Zwei-Faktor-Authentifizierung und sicheres Identitätsmanagement',
       'Sicherheits-Schulungen und Sensibilisierung für Ihre Mitarbeiter',
       'Schnelle Reaktion und Unterstützung im Sicherheitsvorfall',
+      'u.v.m.',
     ],
   },
   {
@@ -45,6 +47,7 @@ const SERVICES = [
       'DSGVO-konforme Datensicherung und Archivierung',
       'Disaster Recovery: schnelle Wiederherstellung im Ernstfall',
       'Monitoring des Speicherplatzes und frühzeitige Warnmeldungen',
+      'u.v.m.',
     ],
   },
   {
@@ -59,6 +62,7 @@ const SERVICES = [
       'Rack-Aufbau und Kabelmanagement',
       'Drucker, Scanner und Peripheriegeräte einrichten und einbinden',
       'Dokumentation aller installierten Komponenten und Netzwerkpläne',
+      'u.v.m.',
     ],
   },
   {
@@ -73,6 +77,7 @@ const SERVICES = [
       'First- und Second-Level-Support für Ihre Mitarbeiter',
       'Reaktionszeiten nach vereinbartem Service Level Agreement (SLA)',
       'Proaktive Wartung und regelmäßige System-Checks zur Fehlerprävention',
+      'u.v.m.',
     ],
   },
   {
@@ -87,6 +92,7 @@ const SERVICES = [
       'Lizenzmanagement und Update-Verwaltung',
       'Einrichtung und Absicherung von Remote-Desktop-Umgebungen (RDS, Citrix)',
       'Laufende Softwarebetreuung und Anwenderunterstützung',
+      'u.v.m.',
     ],
   },
 ];
