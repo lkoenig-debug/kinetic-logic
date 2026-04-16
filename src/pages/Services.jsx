@@ -50,7 +50,7 @@ export default function Services() {
               // Das Ökosystem
             </p>
             <h1 className="font-heading font-bold text-5xl md:text-7xl lg:text-8xl tracking-tighter text-foreground leading-none">
-              SERVICES
+              LEISTUNGEN
             </h1>
             <p className="font-mono text-sm text-muted-foreground mt-6 max-w-xl leading-relaxed">
               Sechs Disziplinen. Ein Ziel. Wir verbinden modernste Technologien 

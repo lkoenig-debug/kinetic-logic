@@ -2,6 +2,10 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, ChevronDown } from 'lucide-react';
 
+const scrollToContent = () => {
+  window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
+};
+
 const STATS = [
   { value: '200+', label: 'Projekte' },
   { value: '99.9%', label: 'Uptime' },
@@ -62,7 +66,7 @@ export default function Home() {
               to="/services"
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3.5 font-heading font-semibold text-sm tracking-wide hover:bg-primary/90 transition-all duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
-              Explore
+              Entdecken
               <ArrowRight size={16} />
             </Link>
             <Link
@@ -75,11 +79,13 @@ export default function Home() {
         </div>
 
         {/* Scroll indicator */}
-        <motion.div
+        <motion.button
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2 }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2"
+          onClick={scrollToContent}
+          className="absolute bottom-10 left-1/2 -translate-x-1/2 cursor-pointer hover:text-primary transition-colors duration-300 focus:outline-none"
+          aria-label="Nach unten scrollen"
         >
           <motion.div
             animate={{ y: [0, 8, 0] }}
@@ -87,7 +93,7 @@ export default function Home() {
           >
             <ChevronDown size={20} className="text-muted-foreground" />
           </motion.div>
-        </motion.div>
+        </motion.button>
       </section>
 
       {/* Stats Section */}

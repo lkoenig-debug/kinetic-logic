@@ -61,7 +61,7 @@ export default function CaseStudies() {
               // Der Beweis
             </p>
             <h1 className="font-heading font-bold text-5xl md:text-7xl lg:text-8xl tracking-tighter text-foreground leading-none">
-              CASE STUDIES
+              REFERENZEN
             </h1>
             <p className="font-mono text-sm text-muted-foreground mt-6 max-w-xl leading-relaxed">
               Zahlen lügen nicht. Entdecken Sie, wie wir komplexe technische 

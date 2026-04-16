@@ -4,11 +4,11 @@ import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const NAV_LINKS = [
-  { label: 'Home', path: '/' },
-  { label: 'Services', path: '/services' },
-  { label: 'Case Studies', path: '/case-studies' },
-  { label: 'About', path: '/about' },
-  { label: 'Contact', path: '/contact' },
+  { label: 'Startseite', path: '/' },
+  { label: 'Leistungen', path: '/services' },
+  { label: 'Referenzen', path: '/case-studies' },
+  { label: 'Über uns', path: '/about' },
+  { label: 'Kontakt', path: '/contact' },
 ];
 
 export default function Navbar() {
