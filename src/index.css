@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;800;900&family=IBM+Plex+Mono:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,10 +6,10 @@
 
 @layer base {
   :root {
-    --font-heading: 'Inter Tight', sans-serif;
+    --font-heading: 'IBM Plex Mono', monospace;
     --font-mono: 'IBM Plex Mono', monospace;
 
-    --background: 240 10% 3.1%;
+    --background: 240 0% 0%;
     --foreground: 240 10% 97.3%;
     --card: 240 6% 11.4%;
     --card-foreground: 240 10% 97.3%;
