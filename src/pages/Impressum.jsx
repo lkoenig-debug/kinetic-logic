@@ -38,7 +38,7 @@ export default function Impressum() {
             <div>
               <h2 className="font-heading font-semibold text-lg text-foreground mb-3">Vertreten durch</h2>
               <p>
-                Geschäftsführer: [Boris Stahl]<br />
+                Geschäftsführer: Boris Stahl<br />
                 Kriegsstraße 132
               </p>
             </div>
