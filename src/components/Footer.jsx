@@ -17,9 +17,9 @@ export default function Footer() {
             <h4 className="font-heading font-semibold text-sm text-foreground mb-3 uppercase tracking-wider">Navigation</h4>
             <div className="flex flex-col gap-2">
               {[
-                { label: 'Home', path: '/' },
-                { label: 'Services', path: '/services' },
-                { label: 'Case Studies', path: '/case-studies' },
+                { label: 'Startseite', path: '/' },
+                { label: 'Leistungen', path: '/services' },
+                { label: 'Referenzen', path: '/case-studies' },
                 { label: 'Über Uns', path: '/about' },
                 { label: 'Kontakt', path: '/contact' },
               ].map((link) => (
