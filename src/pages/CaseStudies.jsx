@@ -6,7 +6,7 @@ const CASES = [
     title: 'Cloud-Migration für FinTech Scale-Up',
     category: 'Cloud Architektur',
     metric: '99.99% Uptime · 40% Kostenreduktion',
-    image: 'https://media.base44.com/images/public/69e098da45036498ae153306/313766bdb_generated_233f3ce2.png',
+    image: 'https://media01.stockfood.com/largepreviews/Mzc2OTM4NDI0/12159304-Blick-aus-dem-Garten-auf-Haus-und-Terrassenbeet-mit-Wasserspiel.jpg',
     large: true,
   },
   {
