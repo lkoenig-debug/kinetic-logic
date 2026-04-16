@@ -107,7 +107,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1, duration: 0.5 }}
-                className="text-center md:text-left"
+                className="text-center"
               >
                 <p className="font-heading font-bold text-4xl md:text-5xl text-foreground tracking-tighter">
                   {stat.value}
