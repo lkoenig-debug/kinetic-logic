@@ -28,7 +28,7 @@ export default function Impressum() {
               <h2 className="font-heading font-semibold text-lg text-foreground mb-3">Angaben gemäß § 5 TMG</h2>
               <p>
                  
-                Stahlcomputer<br />
+                Stahlcomputer Inh. Boris Stahl<br />
                 Kriegsstraße 132<br />
                 76133 Karlsruhe<br />
                 Deutschland
@@ -50,16 +50,6 @@ export default function Impressum() {
                 E-Mail: info@stahlcomputer.de
               </p>
             </div>
-
-            <div>
-              <h2 className="font-heading font-semibold text-lg text-foreground mb-3">Registereintrag</h2>
-              <p>
-                Eintragung im Handelsregister<br />
-                Registergericht: Amtsgericht Berlin-Charlottenburg<br />
-                Registernummer: HRB [Nummer eintragen]
-              </p>
-            </div>
-
 
             <div>
               <h2 className="font-heading font-semibold text-lg text-foreground mb-3">Streitschlichtung</h2>
