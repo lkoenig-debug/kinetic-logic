@@ -7,10 +7,10 @@ const scrollToContent = () => {
 };
 
 const STATS = [
-  { value: '200+', label: 'Projekte' },
-  { value: '99.9%', label: 'Uptime' },
-  { value: '15+', label: 'Jahre Erfahrung' },
-  { value: '50+', label: 'Ingenieure' },
+  { value: '100+', label: 'Kunden' },
+  { value: '99%', label: 'Uptime' },
+  { value: '20+', label: 'Jahre Erfahrung' },
+  { value: '3', label: 'IT-Fachkräfte' },
 ];
 
 export default function Home() {
