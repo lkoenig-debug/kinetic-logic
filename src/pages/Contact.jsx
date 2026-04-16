@@ -3,20 +3,72 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Terminal } from 'lucide-react';
 
 const FIELDS = [
-  { key: 'name', prompt: 'USER_NAME', placeholder: 'Max Mustermann', type: 'text' },
-  { key: 'email', prompt: 'USER_EMAIL', placeholder: 'max@unternehmen.de', type: 'email' },
-  { key: 'company', prompt: 'COMPANY', placeholder: 'Unternehmen GmbH', type: 'text' },
-  { key: 'message', prompt: 'MESSAGE', placeholder: 'Beschreiben Sie Ihr Projekt...', type: 'textarea' },
+  { key: 'name', prompt: 'VOLLSTÄNDIGER_NAME', placeholder: 'Max Mustermann', type: 'text', required: true, label: 'Name' },
+  { key: 'email', prompt: 'E-MAIL_ADRESSE', placeholder: 'max@unternehmen.de', type: 'email', required: true, label: 'E-Mail' },
+  { key: 'company', prompt: 'UNTERNEHMEN', placeholder: 'Mustermann GmbH (optional)', type: 'text', required: false, label: 'Unternehmen' },
+  { key: 'message', prompt: 'NACHRICHT', placeholder: 'Beschreiben Sie Ihr Anliegen oder Projekt...', type: 'textarea', required: true, label: 'Nachricht', minLength: 2 },
 ];
+
+function validateEmail(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+function getError(field, value) {
+  if (field.required && !value.trim()) {
+    return `Bitte geben Sie Ihren ${field.label} an.`;
+  }
+  if (field.key === 'email' && value.trim() && !validateEmail(value)) {
+    return 'Bitte geben Sie eine gültige E-Mail-Adresse an.';
+  }
+  if (field.minLength && value.trim().length > 0 && value.trim().length < field.minLength) {
+    return `Die ${field.label} muss mindestens ${field.minLength} Zeichen enthalten.`;
+  }
+  return null;
+}
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', company: '', message: '' });
+  const [errors, setErrors] = useState({});
+  const [touched, setTouched] = useState({});
   const [submitted, setSubmitted] = useState(false);
   const [activeField, setActiveField] = useState(null);
 
+  const handleBlur = (field) => {
+    setActiveField(null);
+    setTouched((prev) => ({ ...prev, [field.key]: true }));
+    const error = getError(field, formData[field.key]);
+    setErrors((prev) => ({ ...prev, [field.key]: error }));
+  };
+
+  const handleChange = (field, value) => {
+    setFormData((prev) => ({ ...prev, [field.key]: value }));
+    if (touched[field.key]) {
+      const error = getError(field, value);
+      setErrors((prev) => ({ ...prev, [field.key]: error }));
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSubmitted(true);
+    const newErrors = {};
+    const newTouched = {};
+    let hasError = false;
+
+    FIELDS.forEach((field) => {
+      newTouched[field.key] = true;
+      const error = getError(field, formData[field.key]);
+      if (error) {
+        newErrors[field.key] = error;
+        hasError = true;
+      }
+    });
+
+    setTouched(newTouched);
+    setErrors(newErrors);
+
+    if (!hasError) {
+      setSubmitted(true);
+    }
   };
 
   return (
@@ -30,14 +82,14 @@ export default function Contact() {
             transition={{ duration: 0.7 }}
           >
             <p className="font-mono text-xs text-primary tracking-widest uppercase mb-4">
-              // Das Gateway
+              // Kontaktaufnahme
             </p>
             <h1 className="font-heading font-bold text-5xl md:text-7xl lg:text-8xl tracking-tighter text-foreground leading-none">
               KONTAKT
             </h1>
             <p className="font-mono text-sm text-muted-foreground mt-6 max-w-xl leading-relaxed">
-              Initiieren Sie ein Hochleistungs-Protokoll. Sagen Sie uns, 
-              was Sie brauchen — wir architekturieren die Lösung.
+              Teilen Sie uns Ihr Anliegen mit — wir analysieren Ihre Anforderungen 
+              und melden uns innerhalb von 24 Stunden mit einer qualifizierten Einschätzung.
             </p>
           </motion.div>
         </div>
@@ -55,7 +107,7 @@ export default function Contact() {
             {/* Terminal header */}
             <div className="flex items-center gap-2 px-4 py-3 border-b border-border/20 bg-card/50">
               <Terminal size={14} className="text-primary" />
-              <span className="font-mono text-xs text-muted-foreground">stahl.computer — contact_protocol v2.1</span>
+              <span className="font-mono text-xs text-muted-foreground">stahl.computer — secure_contact v2.1</span>
               <div className="ml-auto flex gap-1.5">
                 <div className="w-2.5 h-2.5 rounded-full bg-border/50" />
                 <div className="w-2.5 h-2.5 rounded-full bg-border/50" />
@@ -64,53 +116,73 @@ export default function Contact() {
             </div>
 
             {!submitted ? (
-              <form onSubmit={handleSubmit} className="p-6 md:p-8 space-y-6">
+              <form onSubmit={handleSubmit} noValidate className="p-6 md:p-8 space-y-6">
                 <div className="font-mono text-xs text-muted-foreground mb-6">
-                  <span className="text-primary">$</span> initiating contact_protocol...
+                  <span className="text-primary">$</span> Verbindung aufgebaut. Bitte alle Pflichtfelder ausfüllen.
                   <br />
-                  <span className="text-primary">$</span> fields required: name, email, company, message
+                  <span className="text-primary">$</span> Pflichtfelder: name, email, message — unternehmen: optional
                 </div>
 
-                {FIELDS.map((field, i) => (
-                  <motion.div
-                    key={field.key}
-                    initial={{ opacity: 0, x: -10 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.4 + i * 0.1 }}
-                    className="space-y-2"
-                  >
-                    <label className="font-mono text-xs text-muted-foreground block">
-                      <span className="text-primary">{field.prompt}</span> &gt;
-                    </label>
-                    {field.type === 'textarea' ? (
-                      <textarea
-                        value={formData[field.key]}
-                        onChange={(e) => setFormData({ ...formData, [field.key]: e.target.value })}
-                        onFocus={() => setActiveField(field.key)}
-                        onBlur={() => setActiveField(null)}
-                        placeholder={field.placeholder}
-                        rows={4}
-                        required
-                        className={`w-full bg-transparent border-b font-mono text-sm text-foreground placeholder-muted-foreground/30 focus:outline-none resize-none py-2 transition-colors duration-300 ${
-                          activeField === field.key ? 'border-primary' : 'border-border/30'
-                        }`}
-                      />
-                    ) : (
-                      <input
-                        type={field.type}
-                        value={formData[field.key]}
-                        onChange={(e) => setFormData({ ...formData, [field.key]: e.target.value })}
-                        onFocus={() => setActiveField(field.key)}
-                        onBlur={() => setActiveField(null)}
-                        placeholder={field.placeholder}
-                        required
-                        className={`w-full bg-transparent border-b font-mono text-sm text-foreground placeholder-muted-foreground/30 focus:outline-none py-2 transition-colors duration-300 ${
-                          activeField === field.key ? 'border-primary' : 'border-border/30'
-                        }`}
-                      />
-                    )}
-                  </motion.div>
-                ))}
+                {FIELDS.map((field, i) => {
+                  const hasError = touched[field.key] && errors[field.key];
+                  const isActive = activeField === field.key;
+
+                  const baseInputClass = `w-full bg-transparent border-b font-mono text-sm text-foreground placeholder-muted-foreground/30 focus:outline-none resize-none py-2 transition-colors duration-300 ${
+                    hasError
+                      ? 'border-red-500'
+                      : isActive
+                      ? 'border-primary'
+                      : 'border-border/30'
+                  }`;
+
+                  return (
+                    <motion.div
+                      key={field.key}
+                      initial={{ opacity: 0, x: -10 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: 0.4 + i * 0.1 }}
+                      className="space-y-2"
+                    >
+                      <label className="font-mono text-xs text-muted-foreground block">
+                        <span className="text-primary">{field.prompt}</span>
+                        {field.required && <span className="text-red-500 ml-1">*</span>}
+                        {' '}&gt;
+                      </label>
+
+                      {field.type === 'textarea' ? (
+                        <textarea
+                          value={formData[field.key]}
+                          onChange={(e) => handleChange(field, e.target.value)}
+                          onFocus={() => setActiveField(field.key)}
+                          onBlur={() => handleBlur(field)}
+                          placeholder={field.placeholder}
+                          rows={4}
+                          className={baseInputClass}
+                        />
+                      ) : (
+                        <input
+                          type={field.type}
+                          value={formData[field.key]}
+                          onChange={(e) => handleChange(field, e.target.value)}
+                          onFocus={() => setActiveField(field.key)}
+                          onBlur={() => handleBlur(field)}
+                          placeholder={field.placeholder}
+                          className={baseInputClass}
+                        />
+                      )}
+
+                      {hasError && (
+                        <motion.p
+                          initial={{ opacity: 0, y: -4 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          className="font-mono text-xs text-red-500 flex items-center gap-1"
+                        >
+                          <span className="text-red-500">!</span> {errors[field.key]}
+                        </motion.p>
+                      )}
+                    </motion.div>
+                  );
+                })}
 
                 <motion.div
                   initial={{ opacity: 0 }}
@@ -122,7 +194,7 @@ export default function Contact() {
                     type="submit"
                     className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3 font-heading font-semibold text-sm tracking-wide hover:bg-primary/90 transition-all duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                   >
-                    <span className="font-mono text-xs">$ EXECUTE</span>
+                    <span className="font-mono text-xs">$ ANFRAGE SENDEN</span>
                     <ArrowRight size={14} />
                   </button>
                 </motion.div>
@@ -134,11 +206,11 @@ export default function Contact() {
                   animate={{ opacity: 1 }}
                   className="font-mono text-sm space-y-2"
                 >
-                  <p className="text-primary">$ contact_protocol executed successfully.</p>
-                  <p className="text-muted-foreground">$ response_time: &lt; 24h</p>
-                  <p className="text-muted-foreground">$ status: PENDING_REVIEW</p>
+                  <p className="text-primary">$ Anfrage erfolgreich übermittelt.</p>
+                  <p className="text-muted-foreground">$ Erwartete Reaktionszeit: &lt; 24 Stunden</p>
+                  <p className="text-muted-foreground">$ Status: IN_BEARBEITUNG</p>
                   <p className="text-foreground mt-6">
-                    Danke, {formData.name}. Wir melden uns innerhalb von 24 Stunden.
+                    Vielen Dank, {formData.name}. Wir haben Ihre Anfrage erhalten und werden uns zeitnah bei Ihnen melden.
                   </p>
                 </motion.div>
               </div>
@@ -151,7 +223,7 @@ export default function Contact() {
       <section className="px-6 lg:px-8 py-24">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
-            { label: 'Email', value: 'info@stahlcomputer.de' },
+            { label: 'E-Mail', value: 'info@stahlcomputer.de' },
             { label: 'Telefon', value: '+49 30 123 456 789' },
             { label: 'Standort', value: 'Berlin, Deutschland' },
           ].map((item, i) => (
