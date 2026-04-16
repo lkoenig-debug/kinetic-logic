@@ -21,7 +21,7 @@ export default function Home() {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
             <p className="font-mono text-xs text-primary tracking-widest uppercase mb-6">
-              // Digital Infrastructure Architects
+              // IT-Dienstleister · Stahl Computer Haus
             </p>
             <h1 className="font-heading font-bold text-5xl md:text-7xl lg:text-8xl xl:text-9xl tracking-tighter leading-none text-foreground">
               WE ARCHITECT
@@ -46,9 +46,9 @@ export default function Home() {
             className="mt-12 max-w-lg"
           >
             <p className="font-mono text-sm text-muted-foreground leading-relaxed">
-              Wir entwickeln die unsichtbare technologische Infrastruktur, 
-              die visionäre Unternehmen antreibt. Cloud. Security. AI. 
-              Alles aus einer Hand.
+              Stahl Computer Haus ist Ihr kompetenter IT-Dienstleister. 
+              Cloud, Security, Infrastruktur und Support — 
+              alles aus einer Hand. Robust wie Stahl.
             </p>
           </motion.div>
 
