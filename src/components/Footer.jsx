@@ -47,8 +47,8 @@ export default function Footer() {
             © {new Date().getFullYear()} STAHL COMPUTER HAUS — Alle Rechte vorbehalten.
           </span>
           <div className="flex gap-4">
-            <span className="font-mono text-xs text-muted-foreground hover:text-primary cursor-pointer transition-colors">Impressum</span>
-            <span className="font-mono text-xs text-muted-foreground hover:text-primary cursor-pointer transition-colors">Datenschutz</span>
+            <Link to="/impressum" className="font-mono text-xs text-muted-foreground hover:text-primary transition-colors">Impressum</Link>
+            <Link to="/datenschutz" className="font-mono text-xs text-muted-foreground hover:text-primary transition-colors">Datenschutz</Link>
           </div>
         </div>
       </div>
