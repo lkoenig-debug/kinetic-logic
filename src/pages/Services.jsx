@@ -55,7 +55,7 @@ const SERVICES = [
     details: [
       'Aufbau und Inbetriebnahme von PCs, Servern, Switches und Routern',
       'Strukturierte Netzwerkverkabelungs Beratung',
-      'WLAN-Planung, Ausleuchtung und Installation in Gewerbe Einheiten so wie WLAN Brücken',
+      'WLAN-Planung, Ausleuchtung und Installation in Gewerbe Einheiten auch WLAN Brücken',
       'Rack-Aufbau und ordentliches Kabelmanagement',
       'Drucker, Scanner und Peripheriegeräte einrichten und einbinden',
       'Dokumentation aller installierten Komponenten und Netzwerkpläne',
