@@ -48,8 +48,7 @@ export default function About() {
           >
             Wir sind ein Kollektiv aus <span className="text-primary">3 IT Fachkräften </span>, 
             die glauben, dass digitale Infrastruktur mehr sein kann als nur{' '}
-            <span className="text-primary">funktional</span> — sie kann{' '}
-            <span className="text-primary">außergewöhnlich</span> sein.
+            <span className="text-primary">funktional</span>.
           </motion.p>
         </div>
       </section>
