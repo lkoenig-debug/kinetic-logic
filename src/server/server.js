@@ -1,5 +1,5 @@
 // ============================================================
-// NODE.JS BACKEND — läuft NICHT im Browser / auf Base44
+// NODE.JS BACKEND — läuft NICHT im Browser 
 // Deployment: docker-compose up -d --build
 // Benötigt: server/.env (siehe server/.env.example)
 // ============================================================
