@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Terminal } from 'lucide-react';
-import { base44 } from '@/api/base44Client';
 
 const FIELDS = [
   { key: 'name', prompt: 'VOLLSTÄNDIGER_NAME', placeholder: 'Max Mustermann', type: 'text', required: true, label: 'Name' },
@@ -72,14 +71,19 @@ export default function Contact() {
     if (!hasError) {
       setSending(true);
       setSendError(null);
-      const response = await base44.functions.invoke('sendContactEmail', {
-        name: formData.name,
-        email: formData.email,
-        company: formData.company,
-        message: formData.message,
+      const res = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:3001'}/contact`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          company: formData.company,
+          message: formData.message,
+        }),
       });
+      const data = await res.json();
       setSending(false);
-      if (response.data?.success) {
+      if (data.success) {
         setSubmitted(true);
       } else {
         setSendError('Es gab einen Fehler beim Senden. Bitte versuchen Sie es erneut.');
