@@ -63,8 +63,8 @@ export default function About() {
             className="relative overflow-hidden"
           >
             <img
-              src="https://media.base44.com/images/public/69e098da45036498ae153306/8b319da88_generated_19ef9002.png"
-              alt="Abstract network nodes representing the collective team"
+              src="https://media.base44.com/images/public/69e098da45036498ae153306/c012c9d3f_WIN_20260417_09_39_56_Pro.jpg"
+              alt="Team Mitglied von Stahl Computer Systemhaus"
               className="w-full h-48 md:h-72 object-cover opacity-40"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-background to-transparent" />
