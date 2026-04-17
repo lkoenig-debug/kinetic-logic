@@ -1,2 +1,2 @@
-// Placeholder — Base44 SDK wird beim Self-Hosting nicht benötigt
+// Placeholder — 
 export const base44 = {};
