@@ -25,7 +25,7 @@ Git
 Docker & Docker Compose
 Installation & Start
 # 1. Repository klonen
-git clone https://github.com/dein-user/stahl-computer-website.git
+git clone (https://github.com/lkoenig-debug/kinetic-logic.git)
 cd stahl-computer-website
 
 # 2. Umgebungsvariablen für das Backend anlegen
