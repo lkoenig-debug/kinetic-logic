@@ -12,7 +12,7 @@ const MILESTONES = [
 
 const VALUES = [
   { label: 'Präzision', value: 'Jedes Detail zählt. Wir liefern technische Exzellenz, keine Kompromisse.' },
-  { label: 'Innovation', value: 'Wir stehen an der Spitze der Technologie — immer einen Schritt voraus.' },
+  { label: 'Zuverlässigkeit', value: 'Wir stehen an der Spitze der Technologie — immer einen Schritt voraus.' },
   { label: 'Transparenz', value: 'Klare Kommunikation, ehrliche Einschätzungen, messbare Ergebnisse.' },
 ];
 
