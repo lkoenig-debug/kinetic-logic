@@ -157,7 +157,7 @@ export default function Services() {
             <div className="absolute inset-0 bg-gradient-to-r from-background via-transparent to-background" />
             <div className="absolute inset-0 flex items-center justify-center">
               <p className="font-heading font-bold text-3xl md:text-5xl text-foreground tracking-tighter text-center">
-                Technologie<span className="text-primary">.</span> Strategie<span className="text-primary">.</span> Exzellenz<span className="text-primary">.</span>
+                Technologie<span className="text-primary">.</span> Zuverlässig<span className="text-primary">.</span> Persönlich<span className="text-primary">.</span>
               </p>
             </div>
           </motion.div>
