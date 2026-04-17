@@ -67,7 +67,7 @@ export default function About() {
               alt="Team Mitglied von Stahl Computer Systemhaus"
               className="w-full h-48 md:h-72 object-cover opacity-100"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-background to-transparent" />
+            
           </motion.div>
         </div>
       </section>
