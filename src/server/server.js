@@ -11,17 +11,20 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
+// eslint-disable-next-line no-undef
+const env = process.env;
+
 const app = express();
 app.use(express.json());
-app.use(cors({ origin: process.env.FRONTEND_URL || '*' }));
+app.use(cors({ origin: env.FRONTEND_URL || '*' }));
 
 const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST,
-  port: Number(process.env.SMTP_PORT) || 587,
+  host: env.SMTP_HOST,
+  port: Number(env.SMTP_PORT) || 587,
   secure: false,
   auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASS,
+    user: env.SMTP_USER,
+    pass: env.SMTP_PASS,
   },
 });
 
@@ -34,8 +37,8 @@ app.post('/contact', async (req, res) => {
 
   try {
     await transporter.sendMail({
-      from: `"Stahl Computer Website" <${process.env.SMTP_USER}>`,
-      to: process.env.CONTACT_EMAIL || 'info@stahlcomputer.de',
+      from: `"Stahl Computer Website" <${env.SMTP_USER}>`,
+      to: env.CONTACT_EMAIL || 'info@stahlcomputer.de',
       subject: `Neue Anfrage von ${name}`,
       text: `Name: ${name}\nE-Mail: ${email}\nUnternehmen: ${company || '—'}\n\nNachricht:\n${message}`,
     });
@@ -46,5 +49,5 @@ app.post('/contact', async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 3001;
+const PORT = env.PORT || 3001;
 app.listen(PORT, () => console.log(`Backend läuft auf Port ${PORT}`));
