@@ -224,8 +224,8 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
             { label: 'E-Mail', value: 'info@stahlcomputer.de' },
-            { label: 'Telefon', value: '+49 30 123 456 789' },
-            { label: 'Standort', value: 'Berlin, Deutschland' },
+            { label: 'Telefon', value: '+49 721 - 234 65' },
+            { label: 'Standort', value: 'Karlsruhe, Deutschland' },
           ].map((item, i) => (
             <motion.div
               key={item.label}

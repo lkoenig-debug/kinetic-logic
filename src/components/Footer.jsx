@@ -37,8 +37,8 @@ export default function Footer() {
             <h4 className="font-heading font-semibold text-sm text-foreground mb-3 uppercase tracking-wider">Kontakt</h4>
             <div className="flex flex-col gap-2 font-mono text-xs text-muted-foreground">
               <span>info@stahlcomputer.de</span>
-              <span>+49 30 123 456 789</span>
-              <span>Berlin, Deutschland</span>
+              <span>+49 721 - 234 65</span>
+              <span>Karlsruhe, Deutschland</span>
             </div>
           </div>
         </div>
