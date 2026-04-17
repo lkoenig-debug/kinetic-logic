@@ -59,9 +59,9 @@ stahl-computer/
 │   ├── .env          ← Diese Datei manuell erstellen ✅
 │   ├── server.js
 │   ├── package.json
-│   └── Dockerfile
-├── docker-compose.yml
-└── DEPLOYMENT.md
+│   ├── Dockerfile
+│   └── DEPLOYMENT.md
+└── docker-compose.yml
 ```
 
 ---
