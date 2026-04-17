@@ -19,7 +19,6 @@ export default function Footer() {
               {[
                 { label: 'Startseite', path: '/' },
                 { label: 'Leistungen', path: '/services' },
-                { label: 'Referenzen', path: '/case-studies' },
                 { label: 'Über Uns', path: '/about' },
                 { label: 'Kontakt', path: '/contact' },
               ].map((link) => (

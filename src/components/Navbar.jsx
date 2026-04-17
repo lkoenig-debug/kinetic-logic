@@ -6,7 +6,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 const NAV_LINKS = [
   { label: 'Startseite', path: '/' },
   { label: 'Leistungen', path: '/services' },
-  { label: 'Referenzen', path: '/case-studies' },
   { label: 'Über uns', path: '/about' },
   { label: 'Kontakt', path: '/contact' },
 ];
