@@ -117,7 +117,7 @@ export default function About() {
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2621.3!2d8.4034!3d49.0069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47970097d0c3de1b%3A0x6e0dba48e2f8c6e8!2sKriegsstra%C3%9Fe%20132%2C%2076133%20Karlsruhe!5e0!3m2!1sde!2sde!4v1713340000000!5m2!1sde!2sde"
               width="100%"
               height="400"
-              style={{ border: 0, display: 'block', filter: 'grayscale(100%) invert(92%) contrast(85%)' }}
+              style={{ border: 0, display: 'block' }}
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
