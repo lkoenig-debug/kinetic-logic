@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Terminal } from 'lucide-react';
+import { base44 } from '@/api/base44Client';
 
 const FIELDS = [
   { key: 'name', prompt: 'VOLLSTÄNDIGER_NAME', placeholder: 'Max Mustermann', type: 'text', required: true, label: 'Name' },
@@ -31,6 +32,8 @@ export default function Contact() {
   const [errors, setErrors] = useState({});
   const [touched, setTouched] = useState({});
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [sendError, setSendError] = useState(null);
   const [activeField, setActiveField] = useState(null);
 
   const handleBlur = (field) => {
@@ -67,7 +70,20 @@ export default function Contact() {
     setErrors(newErrors);
 
     if (!hasError) {
-      setSubmitted(true);
+      setSending(true);
+      setSendError(null);
+      const response = await base44.functions.invoke('sendContactEmail', {
+        name: formData.name,
+        email: formData.email,
+        company: formData.company,
+        message: formData.message,
+      });
+      setSending(false);
+      if (response.data?.success) {
+        setSubmitted(true);
+      } else {
+        setSendError('Es gab einen Fehler beim Senden. Bitte versuchen Sie es erneut.');
+      }
     }
   };
 
@@ -190,12 +206,16 @@ export default function Contact() {
                   transition={{ delay: 0.9 }}
                   className="pt-4"
                 >
+                  {sendError && (
+                    <p className="font-mono text-xs text-red-500 mb-3">! {sendError}</p>
+                  )}
                   <button
                     type="submit"
-                    className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3 font-heading font-semibold text-sm tracking-wide hover:bg-primary/90 transition-all duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                    disabled={sending}
+                    className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3 font-heading font-semibold text-sm tracking-wide hover:bg-primary/90 transition-all duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    <span className="font-mono text-xs">$ ANFRAGE SENDEN</span>
-                    <ArrowRight size={14} />
+                    <span className="font-mono text-xs">{sending ? '$ WIRD GESENDET...' : '$ ANFRAGE SENDEN'}</span>
+                    {!sending && <ArrowRight size={14} />}
                   </button>
                 </motion.div>
               </form>
