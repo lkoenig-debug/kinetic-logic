@@ -34,32 +34,63 @@ nano server/.env   # Werte anpassen (SMTP, E-Mail, etc.)
 
 # 3. Container bauen und starten
 docker-compose up -d --build
+
 Die Website ist danach erreichbar unter:
 
+
+
 Frontend: http://localhost:80
+
 Backend API: http://localhost:3001
+
 Umgebungsvariablen (server/.env)
+
 Variable	Beschreibung	Beispiel
+
 SMTP_HOST	SMTP-Server Ihres Mailanbieters	mail.provider.de
+
 SMTP_PORT	SMTP-Port (meist 587 oder 465)	587
+
 SMTP_USER	SMTP-Benutzername / Absender-E-Mail	info@stahlcomputer.de
+
 SMTP_PASS	SMTP-Passwort	geheimesPasswort
+
 CONTACT_EMAIL	Empfängeradresse für Kontaktanfragen	info@stahlcomputer.de
+
+
 FRONTEND_URL	URL des Frontends (für CORS)	https://stahlcomputer.de
+
 PORT	Port des Backend-Servers	3001
+
 Anpassungen
+
 Texte & Inhalte: Direkt in den jeweiligen Dateien unter src/pages/ bearbeiten
+
 Farben & Design: Designsystem in src/index.css (CSS-Variablen) und tailwind.config.js
+
 Kontaktdaten: In src/pages/Contact.jsx, src/pages/About.jsx und src/pages/Impressum.jsx
+
 Projektstruktur
+
 stahl-computer-website/
+
 ├── src/
+
 │   ├── pages/          # Seitenkomponenten
+
 │   ├── components/     # Wiederverwendbare UI-Komponenten
+
 │   └── index.css       # Globale Styles & Design-Tokens
+
 ├── server/
+
 │   ├── server.js       # Node.js Backend (Kontaktformular)
+
 │   ├── .env.example    # Vorlage für Umgebungsvariablen
+
 │   └── Dockerfile
+
 ├── docker-compose.yml
+
 └── README.md
+
