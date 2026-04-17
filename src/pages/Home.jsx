@@ -141,11 +141,11 @@ export default function Home() {
                 // Unsere Philosophie
               </p>
               <h2 className="font-heading font-bold text-2xl md:text-4xl text-foreground tracking-tight">
-                Technologie als Kunst
+                Zuferlässigkeit, Beständigkeit und Sicherheit 
               </h2>
               <p className="font-mono text-sm text-muted-foreground mt-3 max-w-md leading-relaxed">
-                Jede Zeile Code, jede Architekturentscheidung — 
-                wir behandeln digitale Infrastruktur wie ein Kunstwerk.
+                Jeder Service, jede Architekturentscheidung — 
+                wir Kümmern uns um Jede Aufgabe mit vollem Einsatz.
               </p>
             </div>
           </motion.div>
