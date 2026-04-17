@@ -150,8 +150,8 @@ export default function Services() {
             className="relative overflow-hidden"
           >
             <img
-              src="https://media.base44.com/images/public/69e098da45036498ae153306/f259f0ade_generated_c9f7e710.png"
-              alt="Abstract crystalline data cluster representing IT solutions"
+              src="https://media.base44.com/images/public/69e098da45036498ae153306/8982ebe31_generated_image.png"
+              alt="Nahaufnahme einer Platine als Symbol für IT-Technologie"
               className="w-full h-64 md:h-80 object-cover opacity-50"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-background via-transparent to-background" />
