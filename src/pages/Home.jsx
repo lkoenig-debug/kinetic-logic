@@ -141,7 +141,7 @@ export default function Home() {
                 // Unsere Philosophie
               </p>
               <h2 className="font-heading font-bold text-2xl md:text-4xl text-foreground tracking-tight">
-                Zuferlässigkeit, Beständigkeit und Sicherheit 
+                Zuverlässigkeit, Beständigkeit und Sicherheit 
               </h2>
               <p className="font-mono text-sm text-muted-foreground mt-3 max-w-md leading-relaxed">
                 Jeder Service, jede Architekturentscheidung — 
