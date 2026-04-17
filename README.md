@@ -4,47 +4,62 @@ This project contains everything
 
 **Edit the code in your local development environment**
 
+Stahl Computer Systemhaus — Website
+Die offizielle Unternehmenswebsite von Stahl Computer Systemhaus, einem IT-Dienstleister aus Karlsruhe. Die Website präsentiert das Leistungsportfolio, Unternehmensinformationen und bietet ein Kontaktformular — alles in einem modernen, dunklen Design mit animierten Partikeleffekten.
 
+Was ist das?
+Eine vollständig selbst-hostbare Unternehmenswebsite, bestehend aus:
 
-Voraussetzungen auf dem Server
-Docker & Docker Compose installiert
-Git installiert
-Schritt 1 — Repository klonen
-git clone https://github.com/DEIN-USERNAME/DEIN-REPO.git
-cd DEIN-REPO
-Schritt 2 — Backend konfigurieren
-cd server
-cp .env.example .env
-nano .env
-Die .env Datei ausfüllen:
+Frontend – React-Anwendung (Vite) mit Tailwind CSS, Framer Motion und IBM Plex Mono als Hausschrift
+Backend – Node.js / Express-Server, der das Kontaktformular verarbeitet und E-Mails per SMTP versendet
+Seiten
+Seite	Beschreibung
+/	Startseite mit Hero, Statistiken und Philosophie-Bereich
+/services	Leistungsübersicht mit 6 Servicekategorien
+/about	Unternehmensvorstellung, Team, Standortkarte & Timeline
+/contact	Kontaktformular im Terminal-Stil
+/impressum	Rechtliche Pflichtangaben
+/datenschutz	Datenschutzerklärung (DSGVO)
+Voraussetzungen
+Git
+Docker & Docker Compose
+Installation & Start
+# 1. Repository klonen
+git clone https://github.com/dein-user/stahl-computer-website.git
+cd stahl-computer-website
 
-SMTP_HOST=mail.deinprovider.de
-SMTP_PORT=587
-SMTP_USER=info@stahlcomputer.de
-SMTP_PASS=DeinPasswort
-CONTACT_EMAIL=info@stahlcomputer.de
-FRONTEND_URL=https://deine-domain.de
-PORT=3001
-Danach speichern: Ctrl+O, Enter, Ctrl+X
+# 2. Umgebungsvariablen für das Backend anlegen
+cp server/.env.example server/.env
+nano server/.env   # Werte anpassen (SMTP, E-Mail, etc.)
 
-Schritt 3 — Frontend konfigurieren
-Im Root-Verzeichnis des Repos eine .env Datei erstellen:
-
-cd ..
-nano .env
-Inhalt:
-
-VITE_API_URL=http://deine-domain.de:3001
-Schritt 4 — Docker Compose starten
+# 3. Container bauen und starten
 docker-compose up -d --build
-Das baut automatisch:
+Die Website ist danach erreichbar unter:
 
-Frontend (React/Vite → Nginx auf Port 80)
-Backend (Node.js auf Port 3001)
-Schritt 5 — Prüfen ob alles läuft
-docker-compose ps        # Alle Container sollten "Up" sein
-docker-compose logs -f   # Live-Logs anschauen
-Zugriff
-Website: http://deine-server-ip oder http://deine-domain.de
-Bei Problemen: docker-compose logs backend oder docker-compose logs frontend
-Hinweis: Die docker-compose.yml liegt im Root des Repos und referenziert ./backend — du müsstest die Pfade dort ggf. auf ./server anpassen, da die Backend-Dateien jetzt im server/-Ordner liegen
+Frontend: http://localhost:80
+Backend API: http://localhost:3001
+Umgebungsvariablen (server/.env)
+Variable	Beschreibung	Beispiel
+SMTP_HOST	SMTP-Server Ihres Mailanbieters	mail.provider.de
+SMTP_PORT	SMTP-Port (meist 587 oder 465)	587
+SMTP_USER	SMTP-Benutzername / Absender-E-Mail	info@stahlcomputer.de
+SMTP_PASS	SMTP-Passwort	geheimesPasswort
+CONTACT_EMAIL	Empfängeradresse für Kontaktanfragen	info@stahlcomputer.de
+FRONTEND_URL	URL des Frontends (für CORS)	https://stahlcomputer.de
+PORT	Port des Backend-Servers	3001
+Anpassungen
+Texte & Inhalte: Direkt in den jeweiligen Dateien unter src/pages/ bearbeiten
+Farben & Design: Designsystem in src/index.css (CSS-Variablen) und tailwind.config.js
+Kontaktdaten: In src/pages/Contact.jsx, src/pages/About.jsx und src/pages/Impressum.jsx
+Projektstruktur
+stahl-computer-website/
+├── src/
+│   ├── pages/          # Seitenkomponenten
+│   ├── components/     # Wiederverwendbare UI-Komponenten
+│   └── index.css       # Globale Styles & Design-Tokens
+├── server/
+│   ├── server.js       # Node.js Backend (Kontaktformular)
+│   ├── .env.example    # Vorlage für Umgebungsvariablen
+│   └── Dockerfile
+├── docker-compose.yml
+└── README.md
