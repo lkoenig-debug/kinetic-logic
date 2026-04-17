@@ -25,7 +25,7 @@ export default function Home() {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
             <p className="font-mono text-xs text-primary tracking-widest uppercase mb-6">
-              // IT-Dienstleister · Stahl Computer Haus
+              // IT-Dienstleister · Stahl Computer Systemhaus
             </p>
             <h1 className="font-heading font-bold text-5xl md:text-7xl lg:text-8xl xl:text-9xl tracking-tighter leading-none text-foreground">
               WE ARCHITECT
@@ -50,7 +50,7 @@ export default function Home() {
             className="mt-12 max-w-lg"
           >
             <p className="font-mono text-sm text-muted-foreground leading-relaxed">
-              Stahl Computer Haus ist Ihr kompetenter IT-Dienstleister. 
+              Stahl Computer Systemhaus ist Ihr kompetenter IT-Dienstleister. 
               Telekommunikation, Security, Infrastruktur und Support — 
               alles aus einer Hand. 
             </p>

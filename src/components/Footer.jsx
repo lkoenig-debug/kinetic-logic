@@ -7,10 +7,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="font-heading font-bold text-lg text-foreground mb-3">
-              STAHL<span className="text-primary">.</span>COMPUTER
+              STAHL<span className="text-primary">.</span>COMPUTER SYSTEMHAUS
             </h3>
             <p className="font-mono text-xs text-muted-foreground leading-relaxed max-w-xs">
-              Ihr zuverlässiger IT-Dienstleister für Unternehmen — Stahl. Präzision. Technologie.
+              Ihr zuverlässiger IT-Dienstleister für Unternehmen — Stahl Computer Systemhaus. Präzision. Technologie.
             </p>
           </div>
           <div>
@@ -44,7 +44,7 @@ export default function Footer() {
         </div>
         <div className="mt-12 pt-6 border-t border-border/20 flex flex-col md:flex-row justify-between items-center gap-4">
           <span className="font-mono text-xs text-muted-foreground">
-            © {new Date().getFullYear()} STAHL COMPUTER HAUS — Alle Rechte vorbehalten.
+            © {new Date().getFullYear()} STAHL COMPUTER SYSTEMHAUS — Alle Rechte vorbehalten.
           </span>
           <div className="flex gap-4">
             <Link to="/impressum" className="font-mono text-xs text-muted-foreground hover:text-primary transition-colors">Impressum</Link>

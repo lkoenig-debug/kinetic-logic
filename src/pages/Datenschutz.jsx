@@ -116,7 +116,7 @@ export default function Datenschutz() {
                 Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
               </p>
               <p className="mt-3">
-                Stahl Computer Haus GmbH<br />
+                Stahl Computer Systemhaus<br />
                 Musterstraße 1<br />
                 10115 Berlin<br />
                 <br />

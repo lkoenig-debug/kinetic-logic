@@ -28,7 +28,7 @@ export default function Impressum() {
               <h2 className="font-heading font-semibold text-lg text-foreground mb-3">Angaben gemäß § 5 TMG</h2>
               <p>
                  
-                Stahlcomputer Inh. Boris Stahl<br />
+                Stahl Computer Systemhaus Inh. Boris Stahl<br />
                 Kriegsstraße 132<br />
                 76133 Karlsruhe<br />
                 Deutschland

@@ -21,7 +21,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="font-heading font-bold text-lg tracking-tight text-foreground">
-            STAHL<span className="text-primary">.</span>COMPUTER
+            STAHL<span className="text-primary">.</span>COMPUTER SYSTEMHAUS
           </Link>
 
           {/* Desktop links */}
