@@ -65,7 +65,7 @@ export default function About() {
             <img
               src="https://media.base44.com/images/public/69e098da45036498ae153306/c012c9d3f_WIN_20260417_09_39_56_Pro.jpg"
               alt="Team Mitglied von Stahl Computer Systemhaus"
-              className="w-full object-contain opacity-100"
+              className="w-full object-contain opacity-100 max-h-none"
             />
             
           </motion.div>
