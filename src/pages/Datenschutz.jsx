@@ -24,273 +24,235 @@ export default function Datenschutz() {
             transition={{ delay: 0.2, duration: 0.6 }}
             className="font-mono text-sm text-muted-foreground leading-relaxed space-y-8"
           >
+
+            {/* 1 */}
             <div>
               <h2 className="font-heading font-semibold text-lg text-foreground mb-3">1. Datenschutz auf einen Blick</h2>
+
               <h3 className="font-heading font-semibold text-base text-foreground mb-2 mt-4">Allgemeine Hinweise</h3>
               <p>
-                Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen 
-                Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen 
-                Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz 
-                entnehmen Sie unserer nachfolgend aufgeführten Datenschutzerklärung.
+                Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten
+                passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie
+                persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie
+                unserer unter diesem Text aufgeführten Datenschutzerklärung.
               </p>
 
               <h3 className="font-heading font-semibold text-base text-foreground mb-2 mt-4">Datenerfassung auf dieser Website</h3>
               <p className="font-semibold text-foreground">Wer ist verantwortlich für die Datenerfassung auf dieser Website?</p>
               <p className="mt-2">
-                Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten 
-                können Sie dem Abschnitt „Hinweis zur verantwortlichen Stelle" in dieser Datenschutzerklärung entnehmen.
+                Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten
+                können Sie dem Abschnitt „Verantwortliche Stelle" in dieser Datenschutzerklärung entnehmen.
               </p>
 
               <p className="font-semibold text-foreground mt-4">Wie erfassen wir Ihre Daten?</p>
               <p className="mt-2">
-                Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich 
-                z.&nbsp;B. um Daten handeln, die Sie in ein Kontaktformular eingeben. Andere Daten werden automatisch 
-                oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor 
-                allem technische Daten (z.&nbsp;B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). 
-                Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten.
+                Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen — z.&nbsp;B. durch Eingabe
+                in unser Kontaktformular. Andere Daten werden automatisch beim Besuch der Website durch unsere
+                IT-Systeme erfasst (technische Daten wie Browser, Betriebssystem, Uhrzeit des Seitenaufrufs).
               </p>
 
               <p className="font-semibold text-foreground mt-4">Wofür nutzen wir Ihre Daten?</p>
               <p className="mt-2">
-                Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. 
-                Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden.
+                Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten.
+                Kontaktanfragen werden ausschließlich zur Bearbeitung Ihrer Anfrage genutzt.
               </p>
 
               <p className="font-semibold text-foreground mt-4">Welche Rechte haben Sie bezüglich Ihrer Daten?</p>
               <p className="mt-2">
-                Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer 
-                gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung 
-                oder Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt 
-                haben, können Sie diese Einwilligung jederzeit für die Zukunft widerrufen. Außerdem haben Sie das 
-                Recht, unter bestimmten Umständen die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten 
-                zu verlangen. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.
-              </p>
-              <p className="mt-3">
-                Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an uns wenden.
+                Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Herkunft, Empfänger und Zweck Ihrer
+                gespeicherten personenbezogenen Daten sowie das Recht auf Berichtigung, Löschung oder Einschränkung
+                der Verarbeitung. Außerdem steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.
               </p>
             </div>
 
+            {/* 2 */}
             <div>
-              <h2 className="font-heading font-semibold text-lg text-foreground mb-3">2. Hosting</h2>
+              <h2 className="font-heading font-semibold text-lg text-foreground mb-3">2. Verantwortliche Stelle</h2>
               <p>
-                Wir hosten die Inhalte unserer Website bei folgendem Anbieter:
-              </p>
-              <h3 className="font-heading font-semibold text-base text-foreground mb-2 mt-4">Externes Hosting</h3>
-              <p>
-                Diese Website wird extern gehostet. Die personenbezogenen Daten, die auf dieser Website erfasst 
-                werden, werden auf den Servern des Hosters gespeichert. Hierbei kann es sich v.&nbsp;a. um 
-                IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten, Namen, 
-                Websitezugriffe und sonstige Daten, die über eine Website generiert werden, handeln.
-              </p>
-              <p className="mt-3">
-                Das externe Hosting erfolgt zum Zwecke der Vertragserfüllung gegenüber unseren potenziellen und 
-                bestehenden Kunden (Art. 6 Abs. 1 lit. b DSGVO) und im Interesse einer sicheren, schnellen und 
-                effizienten Bereitstellung unseres Online-Angebots durch einen professionellen Anbieter 
-                (Art. 6 Abs. 1 lit. f DSGVO).
-              </p>
-            </div>
-
-            <div>
-              <h2 className="font-heading font-semibold text-lg text-foreground mb-3">3. Allgemeine Hinweise und Pflichtinformationen</h2>
-              
-              <h3 className="font-heading font-semibold text-base text-foreground mb-2 mt-4">Datenschutz</h3>
-              <p>
-                Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln 
-                Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften 
-                sowie dieser Datenschutzerklärung.
-              </p>
-              <p className="mt-3">
-                Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. 
-                Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werden können. Die 
-                vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. 
-                Sie erläutert auch, wie und zu welchem Zweck das geschieht.
-              </p>
-              <p className="mt-3">
-                Wir weisen darauf hin, dass die Datenübertragung im Internet (z.&nbsp;B. bei der Kommunikation per 
-                E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch 
-                Dritte ist nicht möglich.
-              </p>
-
-              <h3 className="font-heading font-semibold text-base text-foreground mb-2 mt-4">Hinweis zur verantwortlichen Stelle</h3>
-              <p>
-                Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
+                Verantwortlich für die Datenverarbeitung auf dieser Website ist:
               </p>
               <p className="mt-3">
                 Stahl Computer Systemhaus<br />
-                Musterstraße 1<br />
-                10115 Berlin<br />
-                <br />
-                Telefon: +49 30 123 456 789<br />
-                E-Mail: info@stahlcomputer.de
+                Inh. Boris Stahl<br />
+                Kriegsstraße 132<br />
+                76133 Karlsruhe<br />
+                Deutschland
               </p>
               <p className="mt-3">
-                Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit 
-                anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.&nbsp;B. Namen, 
-                E-Mail-Adressen o.&nbsp;Ä.) entscheidet.
+                Telefon: +49 721 - 234 65<br />
+                E-Mail: <a href="mailto:info@stahlcomputer.de" className="text-primary hover:underline">info@stahlcomputer.de</a>
               </p>
+              <p className="mt-3">
+                Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit
+                anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet.
+              </p>
+            </div>
 
-              <h3 className="font-heading font-semibold text-base text-foreground mb-2 mt-4">Speicherdauer</h3>
+            {/* 3 */}
+            <div>
+              <h2 className="font-heading font-semibold text-lg text-foreground mb-3">3. Speicherdauer</h2>
               <p>
-                Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, 
-                verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. 
-                Wenn Sie ein berechtigtes Löschersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung 
-                widerrufen, werden Ihre Daten gelöscht, sofern wir keine anderen rechtlich zulässigen Gründe für 
-                die Speicherung Ihrer personenbezogenen Daten haben (z.&nbsp;B. steuer- oder handelsrechtliche 
-                Aufbewahrungsfristen); im letztgenannten Fall erfolgt die Löschung nach Fortfall dieser Gründe.
+                Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben
+                Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Wenn Sie ein
+                berechtigtes Löschersuchen geltend machen oder eine Einwilligung widerrufen, werden Ihre Daten
+                gelöscht, sofern keine anderen rechtlich zulässigen Gründe entgegenstehen (z.&nbsp;B. steuer- oder
+                handelsrechtliche Aufbewahrungsfristen).
               </p>
+            </div>
 
-              <h3 className="font-heading font-semibold text-base text-foreground mb-2 mt-4">
-                Allgemeine Hinweise zu den Rechtsgrundlagen der Datenverarbeitung auf dieser Website
-              </h3>
+            {/* 4 */}
+            <div>
+              <h2 className="font-heading font-semibold text-lg text-foreground mb-3">4. Rechtsgrundlagen der Datenverarbeitung</h2>
               <p>
-                Sofern Sie in die Datenverarbeitung eingewilligt haben, verarbeiten wir Ihre personenbezogenen 
-                Daten auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO bzw. Art. 9 Abs. 2 lit. a DSGVO, sofern 
-                besondere Datenkategorien nach Art. 9 Abs. 1 DSGVO verarbeitet werden. Im Falle einer 
-                ausdrücklichen Einwilligung in die Übertragung personenbezogener Daten in Drittstaaten erfolgt 
-                die Datenverarbeitung außerdem auf Grundlage von Art. 49 Abs. 1 lit. a DSGVO.
+                Sofern Sie in die Datenverarbeitung eingewilligt haben, erfolgt die Verarbeitung auf Grundlage von
+                Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;a DSGVO. Bei Vertragserfüllung oder vorvertraglichen Maßnahmen
+                gilt Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;b DSGVO. Zur Erfüllung rechtlicher Verpflichtungen dient
+                Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;c DSGVO. Die Verarbeitung zur Wahrung berechtigter Interessen
+                erfolgt auf Grundlage von Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO.
               </p>
+            </div>
 
-              <h3 className="font-heading font-semibold text-base text-foreground mb-2 mt-4">Widerruf Ihrer Einwilligung zur Datenverarbeitung</h3>
-              <p>
-                Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie 
-                können eine bereits erteilte Einwilligung jederzeit widerrufen. Die Rechtmäßigkeit der bis zum 
-                Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.
-              </p>
-
-              <h3 className="font-heading font-semibold text-base text-foreground mb-2 mt-4">
-                Widerspruchsrecht gegen die Datenerhebung in besonderen Fällen (Art. 21 DSGVO)
-              </h3>
-              <p className="border-l-2 border-primary pl-4">
-                WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER F DSGVO ERFOLGT, 
-                HABEN SIE JEDERZEIT DAS RECHT, AUS GRÜNDEN, DIE SICH AUS IHRER BESONDEREN SITUATION ERGEBEN, 
-                GEGEN DIE VERARBEITUNG IHRER PERSONENBEZOGENEN DATEN WIDERSPRUCH EINZULEGEN. DIE JEWEILIGE 
-                RECHTSGRUNDLAGE, AUF DENEN EINE VERARBEITUNG BERUHT, ENTNEHMEN SIE DIESER DATENSCHUTZERKLÄRUNG. 
-                WENN SIE WIDERSPRUCH EINLEGEN, WERDEN WIR IHRE BETROFFENEN PERSONENBEZOGENEN DATEN NICHT MEHR 
-                VERARBEITEN, ES SEI DENN, WIR KÖNNEN ZWINGENDE SCHUTZWÜRDIGE GRÜNDE FÜR DIE VERARBEITUNG 
-                NACHWEISEN, DIE IHRE INTERESSEN, RECHTE UND FREIHEITEN ÜBERWIEGEN ODER DIE VERARBEITUNG DIENT 
-                DER GELTENDMACHUNG, AUSÜBUNG ODER VERTEIDIGUNG VON RECHTSANSPRÜCHEN (WIDERSPRUCH NACH ART. 21 
-                ABS. 1 DSGVO).
-              </p>
-
-              <h3 className="font-heading font-semibold text-base text-foreground mb-2 mt-4">Beschwerderecht bei der zuständigen Aufsichtsbehörde</h3>
-              <p>
-                Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer 
-                Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres gewöhnlichen Aufenthalts, ihres 
-                Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes zu. Das Beschwerderecht besteht 
-                unbeschadet anderweitiger verwaltungsrechtlicher oder gerichtlicher Rechtsbehelfe.
-              </p>
-
-              <h3 className="font-heading font-semibold text-base text-foreground mb-2 mt-4">Recht auf Datenübertragbarkeit</h3>
-              <p>
-                Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines 
-                Vertrags automatisiert verarbeiten, an sich oder an einen Dritten in einem gängigen, 
-                maschinenlesbaren Format aushändigen zu lassen. Sofern Sie die direkte Übertragung der Daten an 
-                einen anderen Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch machbar ist.
-              </p>
+            {/* 5 */}
+            <div>
+              <h2 className="font-heading font-semibold text-lg text-foreground mb-3">5. Ihre Rechte</h2>
 
               <h3 className="font-heading font-semibold text-base text-foreground mb-2 mt-4">Auskunft, Löschung und Berichtigung</h3>
               <p>
-                Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche 
-                Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck 
-                der Datenverarbeitung und ggf. ein Recht auf Berichtigung oder Löschung dieser Daten. Hierzu sowie 
-                zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit an uns wenden.
+                Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche
+                Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger sowie den
+                Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung oder Löschung dieser Daten. Wenden
+                Sie sich hierfür jederzeit an uns.
               </p>
 
               <h3 className="font-heading font-semibold text-base text-foreground mb-2 mt-4">Recht auf Einschränkung der Verarbeitung</h3>
               <p>
-                Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. 
-                Hierzu können Sie sich jederzeit an uns wenden. Das Recht auf Einschränkung der Verarbeitung besteht 
-                in folgenden Fällen:
+                Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen,
+                wenn die Richtigkeit der Daten bestritten wird, die Verarbeitung unrechtmäßig ist, wir die Daten
+                nicht mehr benötigen oder Sie Widerspruch nach Art.&nbsp;21 DSGVO eingelegt haben.
               </p>
-              <ul className="list-disc list-inside mt-2 space-y-1">
-                <li>Wenn Sie die Richtigkeit Ihrer bei uns gespeicherten personenbezogenen Daten bestreiten.</li>
-                <li>Wenn die Datenverarbeitung unrechtmäßig geschieht und Sie die Löschung der Daten ablehnen.</li>
-                <li>Wenn wir Ihre personenbezogenen Daten nicht mehr benötigen, Sie diese jedoch zur Ausübung, Verteidigung oder Geltendmachung von Rechtsansprüchen benötigen.</li>
-                <li>Wenn Sie Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben und noch nicht feststeht, ob unsere berechtigten Gründe überwiegen.</li>
-              </ul>
 
-              <h3 className="font-heading font-semibold text-base text-foreground mb-2 mt-4">SSL- bzw. TLS-Verschlüsselung</h3>
+              <h3 className="font-heading font-semibold text-base text-foreground mb-2 mt-4">Recht auf Datenübertragbarkeit</h3>
               <p>
-                Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, 
-                wie zum Beispiel Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL- bzw. 
-                TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des 
-                Browsers von „http://" auf „https://" wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.
+                Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder zur Vertragserfüllung
+                automatisiert verarbeiten, in einem gängigen, maschinenlesbaren Format zu erhalten oder die
+                Übertragung an einen anderen Verantwortlichen zu verlangen.
+              </p>
+
+              <h3 className="font-heading font-semibold text-base text-foreground mb-2 mt-4">Widerruf der Einwilligung</h3>
+              <p>
+                Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können
+                eine bereits erteilte Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen. Bis zum Widerruf
+                bleibt die Verarbeitung rechtmäßig.
+              </p>
+
+              <h3 className="font-heading font-semibold text-base text-foreground mb-2 mt-4">Widerspruchsrecht (Art. 21 DSGVO)</h3>
+              <p className="border-l-2 border-primary pl-4">
+                WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART.&nbsp;6 ABS.&nbsp;1 LIT.&nbsp;E ODER F DSGVO
+                ERFOLGT, HABEN SIE JEDERZEIT DAS RECHT, AUS GRÜNDEN, DIE SICH AUS IHRER BESONDEREN SITUATION
+                ERGEBEN, WIDERSPRUCH GEGEN DIE VERARBEITUNG EINZULEGEN. WIR VERARBEITEN IHRE DATEN DANN NICHT MEHR,
+                ES SEI DENN, WIR KÖNNEN ZWINGENDE SCHUTZWÜRDIGE GRÜNDE NACHWEISEN, DIE IHRE INTERESSEN ÜBERWIEGEN,
+                ODER DIE VERARBEITUNG DIENT DER GELTENDMACHUNG, AUSÜBUNG ODER VERTEIDIGUNG VON RECHTSANSPRÜCHEN.
+              </p>
+
+              <h3 className="font-heading font-semibold text-base text-foreground mb-2 mt-4">Beschwerderecht bei der Aufsichtsbehörde</h3>
+              <p>
+                Im Falle von Verstößen gegen die DSGVO haben Sie ein Beschwerderecht bei einer Datenschutz-
+                Aufsichtsbehörde. Zuständige Behörde für Karlsruhe / Baden-Württemberg ist:
               </p>
               <p className="mt-3">
-                Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns 
-                übermitteln, nicht von Dritten mitgelesen werden.
+                Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg<br />
+                Königstraße 10a, 70173 Stuttgart<br />
+                Telefon: +49 711 615541-0<br />
+                E-Mail: <a href="mailto:poststelle@lfdi.bwl.de" className="text-primary hover:underline">poststelle@lfdi.bwl.de</a><br />
+                <a href="https://www.baden-wuerttemberg.datenschutz.de" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">www.baden-wuerttemberg.datenschutz.de</a>
               </p>
             </div>
 
+            {/* 6 */}
             <div>
-              <h2 className="font-heading font-semibold text-lg text-foreground mb-3">4. Datenerfassung auf dieser Website</h2>
+              <h2 className="font-heading font-semibold text-lg text-foreground mb-3">6. Datenerfassung auf dieser Website</h2>
+
+              <h3 className="font-heading font-semibold text-base text-foreground mb-2 mt-4">Server-Logfiles</h3>
+              <p>
+                Der Hoster dieser Website erhebt und speichert automatisch Informationen in sogenannten
+                Server-Logfiles, die Ihr Browser automatisch übermittelt. Dies sind: Browsertyp und -version,
+                verwendetes Betriebssystem, Referrer-URL, Hostname des zugreifenden Rechners, Uhrzeit der
+                Serveranfrage und IP-Adresse. Eine Zusammenführung dieser Daten mit anderen Datenquellen
+                erfolgt nicht. Rechtsgrundlage ist Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO.
+              </p>
 
               <h3 className="font-heading font-semibold text-base text-foreground mb-2 mt-4">Kontaktformular</h3>
               <p>
-                Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem 
-                Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der 
-                Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht 
-                ohne Ihre Einwilligung weiter.
+                Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben (Name, E-Mail-Adresse,
+                Unternehmen, Nachricht) zwecks Bearbeitung der Anfrage und für eventuelle Rückfragen bei uns
+                gespeichert. Diese Daten geben wir ohne Ihre Einwilligung nicht weiter. Rechtsgrundlage ist
+                Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;b DSGVO (Vertragsanbahnung) bzw. Art.&nbsp;6 Abs.&nbsp;1
+                lit.&nbsp;f DSGVO (berechtigtes Interesse an der Bearbeitung von Anfragen).
               </p>
               <p className="mt-3">
-                Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern 
-                Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung 
-                vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung 
-                auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten 
-                Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a 
-                DSGVO) sofern diese abgefragt wurde.
-              </p>
-              <p className="mt-3">
-                Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie uns zur 
-                Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die 
-                Datenspeicherung entfällt (z.&nbsp;B. nach abgeschlossener Bearbeitung Ihrer Anfrage). 
-                Zwingende gesetzliche Bestimmungen — insbesondere Aufbewahrungsfristen — bleiben unberührt.
+                Die Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung widerrufen
+                oder der Zweck der Speicherung entfällt. Gesetzliche Aufbewahrungsfristen bleiben unberührt.
               </p>
 
-              <h3 className="font-heading font-semibold text-base text-foreground mb-2 mt-4">Anfrage per E-Mail</h3>
+              <h3 className="font-heading font-semibold text-base text-foreground mb-2 mt-4">Anfrage per E-Mail oder Telefon</h3>
               <p>
-                Wenn Sie uns per E-Mail kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden 
-                personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei uns 
-                gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
-              </p>
-              <p className="mt-3">
-                Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern 
-                Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung 
-                vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung 
-                auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten 
-                Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a 
-                DSGVO) sofern diese abgefragt wurde.
+                Wenn Sie uns per E-Mail oder Telefon kontaktieren, wird Ihre Anfrage inklusive aller daraus
+                hervorgehenden personenbezogenen Daten zum Zwecke der Bearbeitung bei uns gespeichert. Diese Daten
+                geben wir ohne Ihre Einwilligung nicht weiter. Rechtsgrundlage ist Art.&nbsp;6 Abs.&nbsp;1
+                lit.&nbsp;b bzw. lit.&nbsp;f DSGVO.
               </p>
             </div>
 
+            {/* 7 */}
             <div>
-              <h2 className="font-heading font-semibold text-lg text-foreground mb-3">5. Plugins und Tools</h2>
-
-              <h3 className="font-heading font-semibold text-base text-foreground mb-2 mt-4">Google Fonts (lokales Hosting)</h3>
+              <h2 className="font-heading font-semibold text-lg text-foreground mb-3">7. Hosting</h2>
               <p>
-                Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten so genannte Google Fonts, die 
-                von Google bereitgestellt werden. Die Google Fonts sind lokal installiert. Eine Verbindung zu 
-                Servern von Google findet dabei nicht statt.
+                Diese Website wird auf eigenen Servern bzw. bei einem externen Hosting-Dienstleister betrieben.
+                Personenbezogene Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters
+                gespeichert. Das Hosting erfolgt zum Zweck der Vertragserfüllung gegenüber unseren Besuchern
+                (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;b DSGVO) und im Interesse einer sicheren und effizienten
+                Bereitstellung unseres Online-Angebots (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO).
+              </p>
+            </div>
+
+            {/* 8 */}
+            <div>
+              <h2 className="font-heading font-semibold text-lg text-foreground mb-3">8. SSL-/TLS-Verschlüsselung</h2>
+              <p>
+                Diese Website nutzt aus Sicherheitsgründen eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte
+                Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://" auf „https://"
+                wechselt und an dem Schloss-Symbol in der Browserzeile. Wenn die Verschlüsselung aktiv ist, können
+                die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.
+              </p>
+            </div>
+
+            {/* 9 */}
+            <div>
+              <h2 className="font-heading font-semibold text-lg text-foreground mb-3">9. Schriftarten (Google Fonts)</h2>
+              <p>
+                Diese Website verwendet Schriftarten von Google Fonts. Die Einbindung erfolgt durch einen lokalen
+                Import, sodass beim Aufruf der Website keine Verbindung zu Servern von Google hergestellt wird und
+                keine personenbezogenen Daten übertragen werden.
               </p>
               <p className="mt-3">
-                Weitere Informationen zu Google Fonts finden Sie unter{' '}
-                <a
-                  href="https://developers.google.com/fonts/faq"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline"
-                >
-                  https://developers.google.com/fonts/faq
-                </a>{' '}
-                und in der Datenschutzerklärung von Google:{' '}
-                <a
-                  href="https://policies.google.com/privacy"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline"
-                >
-                  https://policies.google.com/privacy
-                </a>.
+                Weitere Informationen zu Google Fonts:{' '}
+                <a href="https://developers.google.com/fonts/faq" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                  developers.google.com/fonts/faq
+                </a>
+              </p>
+            </div>
+
+            {/* 10 */}
+            <div>
+              <h2 className="font-heading font-semibold text-lg text-foreground mb-3">10. Online-Streitbeilegung</h2>
+              <p>
+                Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:{' '}
+                <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                  https://ec.europa.eu/consumers/odr/
+                </a>
+              </p>
+              <p className="mt-3">
+                Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
               </p>
             </div>
 
