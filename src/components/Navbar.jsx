@@ -19,8 +19,9 @@ export default function Navbar() {
       <div className="backdrop-blur-xl bg-background/60 border-b border-border/30">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="font-heading font-bold text-lg tracking-tight text-foreground">
-            STAHL<span className="text-primary">.</span>COMPUTER SYSTEMHAUS
+          <Link to="/" className="font-heading font-bold text-2xl tracking-tight text-foreground leading-none">
+            STAHL<span className="text-primary">.</span>COMPUTER
+            <span className="block text-xs font-mono font-normal text-muted-foreground tracking-widest uppercase">Systemhaus</span>
           </Link>
 
           {/* Desktop links */}

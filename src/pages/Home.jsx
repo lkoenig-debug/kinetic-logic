@@ -25,7 +25,7 @@ export default function Home() {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
             <p className="font-mono text-xs text-primary tracking-widest uppercase mb-6">
-              // IT-Dienstleister · Stahl Computer Systemhaus
+              // Ihr IT-Partner in Karlsruhe
             </p>
             <h1 className="font-heading font-bold text-5xl md:text-7xl lg:text-8xl xl:text-9xl tracking-tighter leading-none text-foreground">
               WE ARCHITECT
