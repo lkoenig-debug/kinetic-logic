@@ -27,6 +27,9 @@ export default function Home() {
             <p className="font-mono text-xs text-primary tracking-widest uppercase mb-6">
               // Ihr IT-Partner in Karlsruhe
             </p>
+            <p className="font-heading font-bold text-3xl md:text-4xl tracking-tight text-foreground mb-4">
+              STAHL<span className="text-primary">.</span>COMPUTER <span className="text-muted-foreground font-normal">Systemhaus</span>
+            </p>
             <h1 className="font-heading font-bold text-5xl md:text-7xl lg:text-8xl xl:text-9xl tracking-tighter leading-none text-foreground">
               WE ARCHITECT
             </h1>
